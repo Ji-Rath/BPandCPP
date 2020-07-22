@@ -1,0 +1,27 @@
+Some notes from experimenting with UE4
+
+The UI
+	-  by setting the input focus to only the UI, input also has to be handled on the UI widget.
+	For example, pressing a button to go back to the game.
+	- I need to be cautious with handling visibility with widgets. If a widget is in-front but is invisible, it will not allow the user
+	to interact with widgets behind. (I can use the widget reflector for debugging situations like this)
+	- Widget animations can be reversed so only one animation is needed for an intro and outro transition.
+
+BP to CPP
+	- I have found that code is easier to write after getting an idea of the structure in blueprints. But, complex code is easier to read compared
+	to BP so it is in my best interest to write as much code as possible, probably.
+	- It is easy to reference code in BP but not exactly the other way around. Because of this, I should consider this while creating functions
+	and variables on either end.
+	- Like BP or GameMaker: Studio, it is not exactly in my best interest to write efficient code, but to write in a fast manner. The engine
+	can handle a lot of the spaghetti code I write. The only exception is when I will defininety need a modular system, maybe like in
+	an inventory system or attack system. But even then, only the system has to be modular, how I create the code inside the system can probably
+	be done in a quick manner and optimized when I need or have to down the line.
+	- To add on to the last point, I think a lot of spaghetti code can be hidden in functions, as long as they are properly commented. This
+	may come in handy when I am working with a team that just needs something to work and will not be looking at how the function does it.
+	- Coming from my AP comp sci class, it may be important to not reference variables directly. Instead, creating a function to pass the
+	variables on. From my little experience, I have found that while it is important to create functions for a complex system like inventory,
+	changing a value like a bool with a function almost seems redundant and unnecessary. Maybe my opinion will change as I continue programming.
+	- My current workflow consists of writing complex functions in BP (Where I have my experience right now), then moving it to CPP. For input,
+	I create my inputs in BP and pass it to a CPP function. My thought process is that I can easily add ideas in BP and if they are good, I can
+	keep them or move them to CPP
+	- 

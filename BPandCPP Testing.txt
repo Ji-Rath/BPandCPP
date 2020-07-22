@@ -1,0 +1,38 @@
+- Finish basic implementation of conversation with NPC
+	- End conversation when out of range (DONE)
+	- Press interact to go to next line (DONE)
+	- End conversation when there are no more lines (DONE)
+	- Have NPC continue to walk if not talking (DONE)
+	- Stop talking to one NPC if talking with another (CHANGED, can only interact with NPC that you are currently talking to)
+	- Show interact message when in range of NPC (DONE)
+	- Implement text visibility effect (DONE)
+	- Implement text box visibility animation (DONE)
+
+- Revamp NPC AI
+	- Create smooth movement between points
+	- Create points that the NPC will stop at (DONE)
+	- 
+
+- Implement advanced conversation with NPC
+	- Create sections of lines that can be used randomly (Based on time of day, etc)
+	- Prevent the same lines from being played back to back
+	- Implement text styles
+
+
+- Work on UI testing (5/25/20)
+	- Streamline UI creation.
+		- Making UI visible and making mouse visible (DONE)
+		- Figuring out what UI focus is and how to make sure buttons dont have to be pressed twice to trigger (DONE I THINK)
+		- Figure out UI layers so certain items can still be pressed if they are layered (FIGURED OUT PROBABLY)
+- Work on Gamemode object
+	- Create variables to keep track of game progress or other big events
+
+- General Work
+	- Convert BP functions to CPP so they can be implemented in CPP as well. (DONE?)
+	- Add debug button so I dont have to keep on adding/removing code (DONE)
+	- Move logic to CPP for better implementation and efficiency. (RELATIVELY DONE)
+- Vehicle Implementation
+	- Enter and exit vehicle (BASICALLY DONE)
+- Interaction
+	- Fix interact range. Make interaction line start at the player instead of the camera. (DONE)
+	- Restructure linetrace so it only uses one function for all interactable objects. This is so I can easily implement the vehicle interaction. (DONE)

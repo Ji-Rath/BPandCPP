@@ -1,0 +1,16 @@
+
+TODO for the day
+
+- Smooth transition for entering and exiting vehicle
+- Move work to github so I can work on source control at the same time. This will also allow me to use their system instead of a .txt file.
+- Implement Full Inventory UI
+- Dropping/Placing items
+
+BONUS
+- Niagara experimentation. Footsteps, random superpower, etc.
+
+
+
+
+
+
